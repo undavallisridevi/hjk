@@ -1,0 +1,51 @@
+<html>
+<script>
+const operation = prompt('Enter operator  ( either +, -, * or / ): ');  
+
+const a = parseFloat(prompt ('Enter the first number: '));  
+const b = parseFloat(prompt ('Enter the second number: '));  
+function division(a, b) { 
+ divisor = a / b; 
+ return divisor;
+}  
+  
+ function multiplication(a, b) { 
+ product = a * b; 
+ return product;
+}  
+ 
+function addition(a, b) { 
+ sum = a +  b; 
+ return sum;
+}  
+
+function subtraction(a, b) { 
+ difference = a - b; 
+ return difference;
+}
+if (operation=='+')
+{
+  result=addition(a,b);
+  document.write(result);
+}
+else if(operation=='-')
+{
+result= subtraction(a,b);
+ document.write(result); 
+}
+else if(operation=='*')
+{  
+ result= multiplication(a,b);
+  document.write(result); 
+}
+else if(operation=='/')
+{
+result=division(a,b);
+document.write(result); 
+}
+else{
+document.write("invalid operation");
+}
+</script>
+
+</html>
